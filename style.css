@@ -469,6 +469,7 @@ html{
 	}
 	.contact_input-textarea{
 		width: 100%;
+		resize: none;
 	}
 }
 @media screen and (max-width: 1080px){

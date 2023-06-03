@@ -152,17 +152,17 @@
 					
 					<form action="#">
 					  <div class="contact_input-inner" >
-						<input class="contact_input" type="text" placeholder="First name..">
-						<input class="contact_input" type="text" placeholder="Last name..">
-						<input class="contact_input" type="phone" placeholder="Phone number..">
-						<select class="contact_input" name="theme" id="theme">
+						<input class="contact_input" type="text" placeholder="First name.." required>
+						<input class="contact_input" type="text" placeholder="Last name.." required>
+						<input class="contact_input" type="phone" placeholder="Phone number.." required>
+						<select class="contact_input" name="theme" id="theme" required>
 							<option class="contact_input-theme" value="theme">Theme</option>
 							<option value="Web">Web Developer</option>
 							<option value="android">Android</option>
 							<option value="oop">OOP</option>
 						</select>
 					  </div>
-					  <textarea class="contact_input-textarea" id="msg" name="z" maxlength="200" placeholder='Message..'></textarea>
+					  <textarea required class="contact_input-textarea" id="msg" name="z" maxlength="200" placeholder='Message..'></textarea>
 					  <button class="submit-msg" type="submit">Send message</button>
 					</form>
 				  </div>
