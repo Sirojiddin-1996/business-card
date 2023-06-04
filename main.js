@@ -61,4 +61,22 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    // ======== DROPDOWN MENU ===========//
+    const toggleBtn = document.querySelector('.toggle-btn'),
+        toggleBtnIcon = document.querySelector('.toggle-btn i'),
+        dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+
+        var isOpen = dropDownMenu.classList.contains('open');
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars-staggered'
+    }
+
+
+
 })
+

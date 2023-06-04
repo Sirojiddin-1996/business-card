@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
     <link rel="stylesheet" href="./style.css" />
     <title>Business Card</title>
   </head>
   <body>
-		<div class="container">
 				<!-- HEADER  -->
 			<div class="header">
-				<span class="top-left"></span>
-				<span class="bottom-right"></span>
+				<div class="header-main">
+					<span class="top-left"></span>
+					<span class="bottom-right"></span>
 					<div class="nav-menu">
 						<a href="#" class="logobrand">Mansurjon Turabov</a>
 						<ul id="nav-mobile" class="right">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+						<div class="toggle-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+					</div>
+					<div class="dropdown_menu">
 						<li><a href="#about">About Us</a></li>
 						<li><a href="#contact">Contact Us</a></li>
-						</ul>
 					</div>
+					
 					<div class="header-about">
 						<div class="header-text">
 							<h1>Mansurjon Turabov</h1>
@@ -39,48 +40,53 @@
 							</div>
 							<div class="follow-me">
 								<span></span>
-								<p>  Follow me:</p>
+								<p>Contact me:</p>
 								<a class="anim-1" href="#"><img src="./img/icons8-telegram-100.png" alt="Telegram"></a>
 								<a class="anim-2" href="#"><img src="./img/icons8-whatsapp-96.png" alt="Telegram"></a>
 								<a class="anim-3" href="#"><img src="./img/icons8-in-100.png" alt="Telegram"></a>
 								<a class="anim-4" href="#"><img src="./img/icons8-mail-100.png" alt="Telegram"></a>
 							</div>
 						</div>
-						<img class="header-img" src='./img/brunet-man-wearing-round-eyeglasses-blue-shirt 1.png'>
+						
+							<img class="header-img" src="./img/brunet-man-wearing-round-eyeglasses-blue-shirt.png" alt="">
+						
 					</div>
+				</div>
 					
 				
 			</div>
 			<!-- ABOUT  -->
 			<div class="about" id="about">
-				<h1 class="reveal">About Me</h1>
-				<div class="about-main">
-					<div class="about-content reveal">
-						<div>
-							<img src="./img/check.svg" alt="">
-							<h3>124</h3>
-							<span>Completed Project</span>
+				<div class="about-item">
+					<h1 class="reveal">About Me</h1>
+					<div class="about-main">
+						<div class="about-content reveal">
+							<div>
+								<img src="./img/check.svg" alt="">
+								<h3>124</h3>
+								<span>Completed Project</span>
+							</div>
+							<div>
+								<img src="./img/smile.svg" alt="">
+								<h3>65</h3>
+								<span>Happy
+									Clients</span>
+							</div>
+							<div>
+								<img src="./img/diamond.svg" alt="">
+								<h3>18</h3>
+								<span>Awwards
+									Won</span>
+							</div>
 						</div>
-						<div>
-							<img src="./img/smile.svg" alt="">
-							<h3>65</h3>
-							<span>Happy
-								Clients</span>
+						<div class="line reveal"></div>
+						<div class="about-text reveal">
+							<p>Mansurjon Turabov, exporter of dried fruits, nuts and beans from Uzbekistan. As of May, 2023 - he is running an export company "Sultan Agro Impeks" LLC. Striving to provide ever best service.
+			
+								<br><br> According to him: "His team and he is now building five-star-rated export company. The philosophy of the mission: to create ever best working ecosystem of  supply chain process & best customer service. 
+								
+								<br><br> All the products Sultan Agro offers AA, AAA quality with reasonable prices."</p>
 						</div>
-						<div>
-							<img src="./img/diamond.svg" alt="">
-							<h3>18</h3>
-							<span>Awwards
-								Won</span>
-						</div>
-					</div>
-					<div class="line reveal"></div>
-					<div class="about-text reveal">
-						<p>Mansurjon Turabov, exporter of dried fruits, nuts and beans from Uzbekistan. As of May, 2023 - he is running an export company "Sultan Agro Impeks" LLC. Striving to provide ever best service.
-		
-							<br><br> According to him: "His team and he is now building five-star-rated export company. The philosophy of the mission: to create ever best working ecosystem of  supply chain process & best customer service. 
-							
-							<br><br> All the products Sultan Agro offers AA, AAA quality with reasonable prices."</p>
 					</div>
 				</div>
 
@@ -133,61 +139,63 @@
 			</div>
 			<!-- CONTACT  -->
 			<div class="contact" id="contact">
-				<h1 class="reveal">Contact Me</h1>
-				<div class="contact_wrapper reveal">
-					<div class="contact_wrapper-content">
-						<div>
-							<img src="./img/call.svg" alt="">
-							<span>Phone:</span>
-							<h3>+998 91 791 11 22</h3>
-							
+				<div class="contact-main">
+					<h1 class="reveal">Contact Me</h1>
+					<div class="contact_wrapper ">
+						<div class="contact_wrapper-content reveal">
+							<div>
+								<img src="./img/call.svg" alt="">
+								<span>Phone:</span>
+								<h3>+998 91 791 11 22</h3>
+								
+							</div>
+							<div>
+								<img src="./img/mail.svg" alt="">
+								<span>Email:</span>
+								<h3>info@mansurjonturabov.uz</h3>
+								
+							</div>
+							<div>
+								<img src="./img/location.svg" alt="">
+								<span>Address:</span>
+								<h3>Tashkent, Uzbekistan</h3>
+								
+							</div>
 						</div>
-						<div>
-							<img src="./img/mail.svg" alt="">
-							<span>Email:</span>
-							<h3>info@mansurjonturabov.uz</h3>
-							
+						<div class="line reveal "></div>
+						<div class="row reveal">		
+							<form class="row-form" action="#">
+							<div class="contact_input-inner" >
+								<input class="contact_input" type="text" placeholder="First name.." required>
+								<input class="contact_input" type="text" placeholder="Last name.." required>
+								<input class="contact_input" type="phone" placeholder="Phone number.." required>
+								<select class="contact_input" name="theme" id="theme" required>
+									<option class="contact_input-theme" value="theme">Theme</option>
+									<option value="Web">Web Developer</option>
+									<option value="android">Android</option>
+									<option value="oop">OOP</option>
+								</select>
+							</div>
+							<textarea required class="contact_input-textarea" id="msg" name="z" maxlength="200" placeholder='Message..'></textarea>
+							<button class="submit-msg" type="submit">Send message</button>
+							</form>
 						</div>
-						<div>
-							<img src="./img/location.svg" alt="">
-							<span>Address:</span>
-							<h3>Tashkent, Uzbekistan</h3>
-							
-						</div>
-					</div>
-					<div class="line"></div>
-					<div class="row">
-						
-						<form action="#">
-						<div class="contact_input-inner" >
-							<input class="contact_input" type="text" placeholder="First name.." required>
-							<input class="contact_input" type="text" placeholder="Last name.." required>
-							<input class="contact_input" type="phone" placeholder="Phone number.." required>
-							<select class="contact_input" name="theme" id="theme" required>
-								<option class="contact_input-theme" value="theme">Theme</option>
-								<option value="Web">Web Developer</option>
-								<option value="android">Android</option>
-								<option value="oop">OOP</option>
-							</select>
-						</div>
-						<textarea required class="contact_input-textarea" id="msg" name="z" maxlength="200" placeholder='Message..'></textarea>
-						<button class="submit-msg" type="submit">Send message</button>
-						</form>
 					</div>
 				</div>
 			</div>
 				
-		</div>
 		<!-- FOOTER  -->
 		<div class="footer">
-			<a href="#" class="logobrand">Mansurjon Turabov</a>
-			<div class="follow-me">
-				<span></span>
-				<p>  Follow me:</p>
-				<a href="#"><img src="./img/icons8-telegram-100.png" alt="Telegram"></a>
-				<a href="#"><img src="./img/icons8-whatsapp-96.png" alt="Telegram"></a>
-				<a href="#"><img src="./img/icons8-in-100.png" alt="Telegram"></a>
-				<a href="#"><img src="./img/icons8-mail-100.png" alt="Telegram"></a>
+			<div class="footer-main">
+				<a href="#" class="logobrand">Mansurjon Turabov</a>
+				<div class="follow-me">
+					<span></span>
+					<p>  Follow me:</p>
+					<a href="#"><img src="./img/icons8-telegram-100.png" alt="Telegram"></a>
+					<a href="#"><img src="./img/icons8-whatsapp-96.png" alt="Telegram"></a>
+					<a href="#"><img src="./img/icons8-in-100.png" alt="Telegram"></a>
+					<a href="#"><img src="./img/icons8-mail-100.png" alt="Telegram"></a>
+				</div>
 			</div>
 		</div>
 
