@@ -50,7 +50,6 @@ html{
 	left: 0;
 	width: 587px;
 	height: 587px;
-
 	background: rgba(206, 62, 0, 0.32);
 	filter: blur(250px);
 	
@@ -88,9 +87,10 @@ html{
 	display: flex;
 	align-items:center;
 	justify-content: space-between;
-	width: 205px;
+	width: 300px;
 	height: 56px;
 }
+
 .logobrand, .right a{
 	color:black;
 	font-weight: 700;
@@ -101,6 +101,31 @@ html{
 	line-height: 20px;
 	font-family: 'Space Grotesk';
 	transition: all .5s ease-in-out;
+}
+.language{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.language a{
+	margin-left: 15px;
+	Width:24px;
+	Height:24px;
+	
+
+}
+select{
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 20px;
+	color:black;
+	font-weight: 700;
+	font-family: 'Space Grotesk';
+	transition: all .5s ease-in-out;
+	background: transparent;
+
 }
 .toggle-btn{
 	font-size: 1.5rem;
@@ -118,18 +143,17 @@ html{
 	width: 629px;
 	animation: slide-in-anim 1.5s ease-out forwards;
 
-	background-image: linear-gradient(180.13deg, rgba(255, 255, 255, 0) 50.11%, #FFFFFF 99.89%);
-
-
 }
 
 .header-text{
 	margin-top: 25px;
 	width: 50%;
+	animation: slide-in-anim 1s ease-out forwards;
 }
 .header-text .btn{
 	display: flex;
 	align-items:center;
+	margin-bottom: 90px;
 }
 .header-text h1{
 	font-family: 'Whyte Inktrap';
@@ -138,7 +162,7 @@ html{
 	font-size: 64px;
 	line-height: 97px;
 	color: #1C232C;
-	animation: slide-in-anim 1s ease-out forwards;
+	
 }
 @keyframes slide-in-anim {
 	0% {
@@ -160,7 +184,6 @@ html{
 	line-height: 31px;
 	color: #1C232C;
 	margin-top: 30px;
-	animation: slide-in-anim 1.5s ease-out forwards;
 }
 .header-text p{
 	font-family: 'Space Grotesk';
@@ -170,9 +193,14 @@ html{
 	line-height: 32px;
 	color: #1C232C;
 	margin: 40px auto;
-	animation: slide-in-anim 1.8s ease-out forwards;
 }
+
 .meet-me{
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 32px;
 	cursor: pointer;
 	display: flex;
 	flex-direction: row;
@@ -184,42 +212,26 @@ html{
 	width: 194px;
 	height: 56px;
 	background: #B51D1D;
-	background-size: 300% 100%;
 	border-radius: 10px;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
 	border:none;
-	-moz-animation: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 	margin-right: 20px;
-	animation: slide-in-top 1s ease-in-out;
-}
-@keyframes slide-in-top {
-	0% {
-		opacity: 0;
-		transform: translateY(50%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
 }
 
 .meet-me:hover {
-    background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-	background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  
-	box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    background: #971A1B;
+	box-shadow: 0px 20px 40px rgba(174, 46, 46, 0.25);
 }
 
 .send-me{
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 32px;
 	cursor: pointer;
 	display: inline-block;
 	flex-direction: row;
@@ -231,94 +243,59 @@ html{
 	width: 194px;
 	height: 56px;
 	background: #1C232C;
-	background-size: 300% 100%;
 	border-radius: 10px;
 	flex: none;
 	order: 0;
 	flex-grow: 0;
 	border: none;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-	animation: slide-in-top 1.5s ease-in-out;
 	
 }
-.send-me:focus {
-    outline: none;
-}
+
 .send-me:hover{
-	background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+	background: #0D1017;
+	box-shadow: 0px 20px 40px rgba(13, 16, 23, 0.25);
 }
-.follow-me{
+.contact-me, .follow-me{
 	margin-left: 40px;
-	margin-top: 120px;
 	margin-bottom: 40px;
 	display: flex;
 	align-items: center;
 }
-.follow-me p{
+.contact-me p, .follow-me p{
 	margin: 0;
 	font-size: 18px;
 	line-height: 23px;
 	font-weight: bold;
 }
-.follow-me  span{
+.contact-me  span, .follow-me span{
 	border:1px solid #1C232C;
 	width: 42px;
 	margin-right: 20px;
 
 }
-.follow-me a{
+.contact-me a{
 	margin-left: 25px;
 	transition: all .5s ease;
 	
 }
-.follow-me a:hover{
+.contact-me a:hover, .follow-me a:hover{
 	transform: translateY(-5px);
 }
-
-.anim-1{
-	animation: slide 1s ease-in-out;
-
-}
-
-.anim-2{
-	animation: slide 1.2s ease-in-out;
-}
-.anim-3{
-	animation: slide 1.4s ease-in-out;
-}
-.anim-4{
-	animation: slide 1.6s ease-in-out;
-}
-
-
-@keyframes slide {
-	0% {
-		opacity: 0;
-		transform: translateY(50%);
-	}
-	70%{
-		opacity: 1;
-		transform: translateY(-20%);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-}
-.follow-me img{
+.contact-me img, .follow-me img{
 	width: 25px;
 	height: 25px;
 }
+.follow-me a{
+	transition: all .5s ease;
+}
+.anim-4{
+	margin-left: 40px;
+}
+.anim-5{
+	margin-left: 25px;
+}
+
 /* ABOUT */
 .about, .contact{
 	background: #F6F6F9;
@@ -370,7 +347,8 @@ html{
 .about-content  div{
 	text-align: end;
 	margin: 40px 0;
-	margin-right: 80px;
+	margin-right: 40px;
+	width: 180px;
 }
 
 .about-content span, .contact_wrapper span{
@@ -551,7 +529,6 @@ html{
 	width: 194px;
 	height: 56px;
 	background: #1C232C;
-	background-size: 300% 100%;
 	border-radius: 10px;
 	font-family: 'Space Grotesk';
 	font-style: normal;
@@ -560,19 +537,11 @@ html{
 	line-height: 32px;
 	margin-top: 25px;
 	border: none;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
 .submit-msg:hover{
-	background-position: 100% 0;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-	background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
-    box-shadow: 0 4px 6px 0 rgba(45, 54, 65, 0.75);
+	background: #0D1017;
+	box-shadow: 0px 20px 40px rgba(13, 16, 23, 0.25);
 }
 
 
@@ -610,10 +579,9 @@ html{
 	align-items: center;
 	padding: 6px;
 	gap: 10px;
-
+	margin-left: 10px;
 	width: 32px;
 	height: 32px;
-
 	background: #FFFFFF;
 	box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.01);
 	border-radius: 50px;
@@ -640,10 +608,10 @@ html{
 	transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-	height: 100px;
+	height: 120px;
 	background: rgba(255,255,255,0.5);
 }
-.dropdown_menu li{
+.dropdown_menu li, .dropdown_menu div{
 	margin: 10px;
 }
 
@@ -730,8 +698,11 @@ height: 56px;
 	}
 	.about-content{
 		display: flex;
-		align-items:center;
+		align-items:flex-start;
 		justify-content: space-between;
+	}
+	.about-content h3{
+		font-size: 30px;
 	}
 	.about-content div{
 		margin-right: 5px;
@@ -739,7 +710,7 @@ height: 56px;
 	.header-text .btn{
 		justify-content: space-around;
 	}
-	.follow-me{
+	.follow-me, .contact-me{
 		justify-content: center;
 	}
 	.line{
@@ -747,7 +718,7 @@ height: 56px;
 		width: 100%;
 	}
 	.about-text p{
-		text-align: justify;
+		text-align: center;
 		margin-top: 40px;
 	}
 	.offer_slider-prev{
@@ -785,6 +756,12 @@ height: 56px;
 		width: 100%;
 		margin-top: 20px;
 	}
+	.footer .follow-me{
+		display: flex;
+		align-items:center;
+		flex-direction: row;
+		justify-content: center;
+	}
 	.footer .follow-me p{
 		font-size: 16px;
 	}
@@ -816,11 +793,33 @@ height: 56px;
 	.send-me, .meet-me{
 		width: 160px;
 	}
-	.follow-me{
-		margin-left: 10px;
+	.follow-me, .contact-me{
+		flex-direction: column;
+		margin: 20px 0px;
+	}
+	.follow-me span, .contact-me span{
+		display: none;
+	}
+	.contact-me a{
+		margin: 0;
+	}
+	.contact-me div{
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+	.follow-me div{
+		width: 100px;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 10px;
+	}
+	.anim-4, .anim-5{
+		margin: 0;
 	}
 	.about-content h3{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.about-content div{
 		text-align: center;
@@ -888,10 +887,7 @@ height: 56px;
 		font-size: 12px;
 		line-height: 24px;
 	}
-	.follow-me{
-		width: 90%;
-		justify-content: space-between;
-	}
+	
 	.follow-me span{
 		width: 20px;
 		margin-right: 2px;
@@ -900,8 +896,10 @@ height: 56px;
 		margin-left: 10px;
 	}
 	
-	.follow-me p{
+	.follow-me p, .contact-me p{
 		margin: 0;
+		font-size: 18px;
+		line-height: 24px;
 	}
 	.nav-menu{
 		width: 90%;
@@ -962,7 +960,5 @@ height: 56px;
 	.logobrand{
 		font-size: 16px;
 	}
-	.follow-me p{
-		font-size: 14px;
-	}
+	
 }
