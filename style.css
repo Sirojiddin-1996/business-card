@@ -87,7 +87,7 @@ html{
 	display: flex;
 	align-items:center;
 	justify-content: space-between;
-	width: 300px;
+	width: 400px;
 	height: 56px;
 }
 
@@ -204,14 +204,14 @@ html{
 }
 .header-img{
 	width: 629px;
-	animation: slide-in-anim 1.5s ease-out forwards;
-
+	animation: slide-in-anim .5s ease-out forwards;
+	object-fit: contain;
 }
 
 .header-text{
 	margin-top: 25px;
 	width: 50%;
-	animation: slide-in-anim 1s ease-out forwards;
+	animation: slide-in-anim .5s ease-out forwards;
 }
 .header-text .btn{
 	display: flex;
@@ -255,7 +255,7 @@ html{
 	font-size: 16px;
 	line-height: 32px;
 	color: #1C232C;
-	margin: 40px auto;
+	margin: 40px 10px;
 }
 
 .meet-me{
@@ -320,7 +320,6 @@ html{
 	box-shadow: 0px 20px 40px rgba(13, 16, 23, 0.25);
 }
 .contact-me, .follow-me{
-	margin-left: 40px;
 	margin-bottom: 40px;
 	display: flex;
 	align-items: center;
@@ -381,20 +380,18 @@ html{
 	line-height: 97px;
 	color: #1C232C;
 	margin-bottom: 40px;
-	margin-left: 10%;
 }
 .reveal{
-	transform: translateY(100px);
+	transform: translateY(50px);
 	opacity: 0;
-	transition: all 1.5s ease;
+	transition: all .5s ease;
 }
 .reveal.active{
 	opacity: 1;
 	transform: translateY(0px);
 }
 .about-main, .contact_wrapper{
-	width: 80%;
-	margin: 0 auto;
+	margin: 0 15px;
 	display: flex;
 	justify-content: center;
 	
@@ -432,9 +429,10 @@ html{
 	font-family: 'Space Grotesk';
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 32px;
 	color: #1C232C;
+	margin-bottom: 100px;
 }
 
 /* SLIDER */
@@ -566,6 +564,15 @@ html{
 	gap: 10px;
 	
 }
+
+.select-input{
+	position: relative;
+}
+.arrow-select{
+	position: absolute;
+	right: 5px;
+	top: 18px;
+}
 .contact_input-textarea{
 	margin-top: 20px;
 	width:100%;
@@ -626,16 +633,20 @@ html{
 .footer .logobrand{
 	color:aliceblue;
 }
-.footer .follow-me{
+.footer .follow-me, .footer .contact-me{
 	margin: 0;
 	color:aliceblue;
 	
 }
-.footer .follow-me span{
+.footer .follow-me span, .footer .contact-me span{
 	border:1px solid white;
 	width: 80px;
 }
-.footer .follow-me a{
+.footer .contact-me div, .footer .follow-me div{
+	display: flex;
+	align-items:center;
+}
+.footer .follow-me a, .footer .contact-me a{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -650,12 +661,17 @@ html{
 	border-radius: 50px;
 
 }
-.footer .follow-me a img{
+.footer .follow-me a img, .footer .contact-me a img{
 	width: 20px;
 	height: 20px;
 }
 
-
+.footer .follow-me, .footer .contact-me{
+	margin-bottom: 15px;
+}
+.footer-main .follow-me div{
+	margin-left: 10px;
+}
 @media  screen and (max-width: 1280px) {
 	.header, .about-item, .slider, .contact-main, .footer-main{
 		width: 100%;
@@ -697,7 +713,6 @@ html{
 		margin-right: 10px;
 	}
 	.header-about{
-		width: 100%;
 		flex-direction: column-reverse;
 
 	}
@@ -706,8 +721,6 @@ html{
 	}
 	.header-text{
 		width: 100%;
-		margin-top: -80px;
-		z-index: 1;
 
 	}
 	.header-text h1{
@@ -732,7 +745,7 @@ height: 56px;
 	}
 	.about-content{
 		display: flex;
-		align-items:flex-start;
+		align-items:baseline;
 		justify-content: space-between;
 	}
 	.about-content h3{
@@ -740,13 +753,12 @@ height: 56px;
 	}
 	.about-content div{
 		margin-right: 5px;
+		text-align: center;
 	}
 	.header-text .btn{
 		justify-content: space-around;
 	}
-	.follow-me, .contact-me{
-		justify-content: center;
-	}
+	
 	.line{
 		height: 0;
 		width: 100%;
@@ -790,17 +802,19 @@ height: 56px;
 		width: 100%;
 		margin-top: 20px;
 	}
-	.footer .follow-me{
-		display: flex;
-		align-items:center;
-		flex-direction: row;
-		justify-content: center;
+	.footer-main .follow-me div{
+		margin-left: 15px;
+	}
+	.footer .follow-me, .footer .contact-me{
+		margin-bottom: 15px;
+		
 	}
 	.footer .follow-me p{
 		font-size: 16px;
 	}
-	.footer .follow-me span {
-		width: 60px;
+	
+	.footer .follow-me span, .footer .contact-me span{
+		width: 50px;
 	}
 	.footer .follow-me a {
 		
@@ -868,6 +882,9 @@ height: 56px;
 		line-height: 24px;
 		margin: 10px auto;
 	}
+	.about-content h3:nth-child(2){
+		margin-top: 10px;
+	}
 	.about-content div{
 		text-align: center;
 	}
@@ -882,7 +899,8 @@ height: 56px;
 		line-height: 26px;
 	}
 	.contact_wrapper span{
-		font-size: 20px;
+		font-size: 25px;
+		line-height: 40px;
 	}
 	.contact_input-inner{
 		grid-template-columns: none;
@@ -895,9 +913,10 @@ height: 56px;
 	}
 	.footer .logobrand{
 		font-size: 20px;
+		text-align: center;
 	}
 	.footer .follow-me p{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	.footer .follow-me span {
 		width: 30px;
@@ -914,12 +933,14 @@ height: 56px;
 	.footer .follow-me span{
 		margin-right: 10px;
 	}
+	.footer-main .follow-me div{
+		margin-left: 0;
+	}
 	
 }
 @media screen and (max-width: 420px){
 	.header-text {
-		margin-top: -78px;
-		z-index: 1;
+		margin: 0;
 	}
 	.header-text h1, .about h1, .contact h1{
 		font-size: 36px;
@@ -966,7 +987,7 @@ height: 56px;
 		width: 30px;
 	}
 	.contact_wrapper span{
-		font-size: 10px;
+		font-size: 20px;
 	}
 	.contact_wrapper h3 {
 		font-size: 20px;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="./style.css" />
     <title>Business Card</title>
   </head>
@@ -30,7 +30,7 @@
 								</div>
 							</div>
 						</ul>
-						<div class="toggle-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+						<div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
 					</div>
 					<div class="dropdown_menu">
 						<li><a href="#about">About Me</a></li>
@@ -70,7 +70,7 @@
 									<a class="anim-4" href="https://uz.linkedin.com/in/mansurjon-turobov-5a732bbb"><img src="./img/icons8-in-100.png" alt="Linkedin"></a>
 									<a class="anim-5" href="#"><img src="./img/tch.svg" alt="TenChat"></a>
 								</div>
-								</div>
+							</div>
 						</div>
 						
 						<img class="header-img" src="./img/brunet.png" alt="">
@@ -189,13 +189,16 @@
 							<div class="contact_input-inner" >
 								<input class="contact_input" type="text" placeholder="First name.." required>
 								<input class="contact_input" type="text" placeholder="Last name.." required>
-								<input class="contact_input" type="phone" placeholder="Phone number.." required>
-								<select class="contact_input" name="theme" id="theme" required>
-									<option class="contact_input-theme" value="theme">Theme</option>
-									<option value="Web">Web Developer</option>
-									<option value="android">Android</option>
-									<option value="oop">OOP</option>
-								</select>
+								<input class="contact_input" type="tel" placeholder="Phone number.." required>
+								<div class="select-input"><i class="arrow-select fa-solid fa-caret-down"></i>
+									<select class="contact_input" name="theme" id="theme" required>
+										
+										<option class="text-grey lighten-2" value="theme" disabled selected>Theme</option>
+										<option value="Web">Web Developer</option>
+										<option value="android">Android</option>
+										<option value="oop">OOP</option>
+									</select>
+								</div>
 							</div>
 							<textarea required class="contact_input-textarea" id="msg" name="z" maxlength="200" placeholder='Message..'></textarea>
 							<button class="submit-msg" type="submit">Send message</button>
@@ -208,15 +211,26 @@
 		<!-- FOOTER  -->
 		<div class="footer">
 			<div class="footer-main">
-				<a href="#" class="logobrand">Mansurjon Turabov</a>
-				<div class="follow-me">
-					<span></span>
-					<p>  Follow me:</p>
-					<a href="https://t.me/sultanagro_uz"><img src="./img/icons8-telegram-100.png" alt="Telegram"></a>
-					<a href="https://wa.me/998994690007"><img src="./img/icons8-whatsapp-96.png" alt="WhatsApp"></a>
-					<a class="anim-4" href="https://uz.linkedin.com/in/mansurjon-turobov-5a732bbb"><img src="./img/icons8-in-100.png" alt="Linkedin"></a>
-					<a href="https://manager@sultanagro.uz"><img src="./img/icons8-mail-100.png" alt="Email"></a></div>
-			</div>
+				<a href="https://sultanagro.uz" class="logobrand">Mansurjon Turabov</a>
+				<div>
+					<div class="contact-me">
+						<span></span>
+						<p>Contact me:</p>
+						<div>
+							<a href="https://t.me/sultanagro_uz"><img src="./img/icons8-telegram-100.png" alt="Telegram"></a>
+							<a href="https://wa.me/998994690007"><img src="./img/icons8-whatsapp-96.png" alt="WhatsApp"></a>
+							<a href="https://manager@sultanagro.uz"><img src="./img/icons8-mail-100.png" alt="Email"></a>
+						</div>
+					</div>
+					<div class="follow-me">
+						<span></span>
+						<p>Follow me:</p>
+						<div>
+							<a class="anim-4" href="https://uz.linkedin.com/in/mansurjon-turobov-5a732bbb"><img src="./img/icons8-in-100.png" alt="Linkedin"></a>
+							<a class="anim-5" href="#"><img src="./img/tch.svg" alt="TenChat"></a>
+						</div>
+					</div>
+				</div>
 		</div>
 
     <script src="./main.js"></script>

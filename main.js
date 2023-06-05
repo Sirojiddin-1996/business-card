@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
         for (var i = 0; i < reveals.length; i++) {
             var windowHeigth = window.innerHeight;
             var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 100;
+            var revealPoint = 50;
 
             if (revealTop < windowHeigth - revealPoint) {
                 reveals[i].classList.add('active')
@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         toggleBtnIcon.classList = isOpen
             ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars-staggered'
+            : 'fa-solid fa-bars'
 
 
     }
