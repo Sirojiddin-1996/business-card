@@ -113,6 +113,7 @@ html{
 }
 .language span{
 	cursor: pointer;
+	font-family: 'Space Grotesk';
 }
 .arrow-down{
 	position: absolute;
@@ -696,17 +697,21 @@ html{
 		margin-right: 10px;
 	}
 	.header-about{
-		width: 95%;
+		width: 100%;
 		flex-direction: column-reverse;
+
 	}
 	.header-img{
 		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		
 	}
 	.header-text{
 		width: 100%;
+		margin-top: -80px;
+		z-index: 1;
+
+	}
+	.header-text h1{
+		font-size: 50px;
 	}
 	.header-text h1, .about h1, .contact h1{
 		text-align: center;
@@ -809,6 +814,9 @@ height: 56px;
 	.right {
 		display: none;
 	}
+	.bottom-right{
+		display: none;
+	}
 	.toggle-btn{
 		display: block;
 	}
@@ -829,6 +837,13 @@ height: 56px;
 	.follow-me span, .contact-me span{
 		display: none;
 	}
+	.header-about{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.about-main{
+		width: 90%;
+	}
 	.contact-me a{
 		margin: 0;
 	}
@@ -848,7 +863,10 @@ height: 56px;
 		margin: 0;
 	}
 	.about-content h3{
-		font-size: 25px;
+		font-size: 21px;
+		text-align: center;
+		line-height: 24px;
+		margin: 10px auto;
 	}
 	.about-content div{
 		text-align: center;
@@ -860,8 +878,11 @@ height: 56px;
 		width: 90%;
 	}
 	.contact_wrapper h3 {
+		font-size: 26px;
+		line-height: 26px;
+	}
+	.contact_wrapper span{
 		font-size: 20px;
-	line-height: 26px;
 	}
 	.contact_input-inner{
 		grid-template-columns: none;
@@ -906,7 +927,7 @@ height: 56px;
 		margin: 0 auto;
 	}
 	.header-text h4{
-		margin-top: 0;
+		margin-top: 10px;
 	}
 	
 	.header-text p{
@@ -915,6 +936,9 @@ height: 56px;
 		margin-top: 20px;
 		font-size: 12px;
 		line-height: 24px;
+	}
+	.send-me, .meet-me{
+		font-size: 15px;
 	}
 	
 	.follow-me span{
@@ -939,14 +963,14 @@ height: 56px;
 	}
 	
 	.contact_wrapper-content div img{
-		width: 20px;
+		width: 30px;
 	}
 	.contact_wrapper span{
 		font-size: 10px;
 	}
 	.contact_wrapper h3 {
-		font-size: 10px;
-		line-height: 10px;
+		font-size: 20px;
+		line-height: 20px;
 		text-align: center;
 	}
 	
@@ -962,6 +986,9 @@ height: 56px;
 	}
 }
 @media  screen and (max-width: 350px) {
+	.header-text{
+		margin-top: -45px;
+	}
 	.header-text .btn{
 		flex-direction: column;
 	}
@@ -969,7 +996,7 @@ height: 56px;
 		width: 80%;
 		margin: 10px auto;
 	}
-	.top-left, .bottom-right{
+	.top-left{
 		width: 200px;
 	}
 	.header-text h1{
