@@ -64,7 +64,12 @@ window.addEventListener('DOMContentLoaded', () => {
     // ======== DROPDOWN MENU ===========//
     const toggleBtn = document.querySelector('.toggle-btn'),
         toggleBtnIcon = document.querySelector('.toggle-btn i'),
-        dropDownMenu = document.querySelector('.dropdown_menu');
+        dropDownMenu = document.querySelector('.dropdown_menu'),
+        clicklan = document.querySelector('.language'),
+        droplan = document.querySelector('.droplan'),
+        lan2 = document.querySelector('.lan'),
+        lang = document.querySelector('.languages');
+
 
     toggleBtn.onclick = function () {
         dropDownMenu.classList.toggle('open');
@@ -76,6 +81,20 @@ window.addEventListener('DOMContentLoaded', () => {
             : 'fa-solid fa-bars-staggered'
 
 
+    }
+
+    clicklan.onclick = function () {
+        lang.classList.toggle('drop')
+        var isDrop = lang.classList.contains('drop')
+
+        isDrop ? lang.style.display = 'grid' : lang.style.display = 'none'
+    }
+
+    lan2.onclick = function () {
+        droplan.classList.toggle('drop1')
+        var isDrop1 = droplan.classList.contains('drop1')
+
+        isDrop1 ? droplan.style.display = 'grid' : droplan.style.display = 'none'
     }
 
 
