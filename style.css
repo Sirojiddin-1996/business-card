@@ -666,7 +666,7 @@ html{
 	height: 20px;
 }
 
-.footer .follow-me, .footer .contact-me{
+.footer .contact-me{
 	margin-bottom: 15px;
 }
 .footer-main .follow-me div{
@@ -714,6 +714,7 @@ html{
 	}
 	.header-about{
 		flex-direction: column-reverse;
+		width: 100%;
 
 	}
 	.header-img{
