@@ -52,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
         for (var i = 0; i < reveals.length; i++) {
             var windowHeigth = window.innerHeight;
             var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 50;
+            var revealPoint = 10;
 
             if (revealTop < windowHeigth - revealPoint) {
                 reveals[i].classList.add('active')
