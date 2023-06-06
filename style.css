@@ -40,7 +40,6 @@ html{
 }
 .header-main{
 	width: 100%;
-	
 
 }
 .top-left{
@@ -200,7 +199,7 @@ html{
 	display: flex;
 	justify-content: center;
 	margin: 0 10px;
-	margin-top: 60px;
+	margin-top: 80px;
 }
 .header-img{
 	width: 629px;
@@ -580,6 +579,7 @@ html{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	font-size: 16px;
 	padding: 18px 20px;
 	gap: 10px;
 	background: rgba(255, 255, 255, 0.22);
@@ -672,6 +672,8 @@ html{
 .footer-main .follow-me div{
 	margin-left: 10px;
 }
+
+
 @media  screen and (max-width: 1280px) {
 	.header, .about-item, .slider, .contact-main, .footer-main{
 		width: 100%;
@@ -829,6 +831,16 @@ height: 56px;
 	.right {
 		display: none;
 	}
+	.top-left{
+		border:1px solid red;
+		width: 374px;
+		height: 374px;
+		left: calc(50% - 374px/2 + 0.5px);
+		top: -138px;
+		border-radius: 50%;
+		background: rgba(206, 62, 0, 0.32);
+		filter: blur(250px);
+	}
 	.bottom-right{
 		display: none;
 	}
@@ -838,9 +850,6 @@ height: 56px;
 	
 	.dropdown_menu{
 		display: block;
-	}
-	.top-left{
-		width: 347px;
 	}
 	.send-me, .meet-me{
 		width: 160px;
